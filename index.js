@@ -76,9 +76,9 @@ const main = async() => {
     const now = new Date()
     const timeDiff = now.getTime() - previousCallDate.getTime();
 
-    // if (timeDiff < FIVE_MINUTES) {
-    //     return;
-    // }
+    if (timeDiff < FIVE_MINUTES) {
+        return;
+    }
 
     try {
         await runCycle();
@@ -90,7 +90,7 @@ const main = async() => {
 (async() => {
     while (true) {
         await main();
-        await sleep(5000);
+        await sleep(TEN_SECONDS);
     }
 })();
 
