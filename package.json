@@ -1,0 +1,10 @@
+{
+  "name": "ledstrip",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "gatttool": "^1.0.1",
+    "ts-node": "^10.7.0"
+  }
+}
